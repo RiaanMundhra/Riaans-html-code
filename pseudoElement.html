@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+    <style>
+        /* before */
+
+        .decorated::before {
+
+            content: "*";
+
+            color: blue;
+
+        }
+
+        /* after */
+
+        .decorated::after {
+
+            content: "*";
+
+            color: blue
+        }
+
+
+        p::first-letter {
+
+            font-size: 30px;
+
+            color: red;
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="decorated">Riaan</div>
+
+    <p>Joyce</p>
+
+</body>
+
+</html>
