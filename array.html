@@ -1,0 +1,60 @@
+Array :
+
+<!DOCTYPE html>
+
+<html>
+
+<body>
+
+    <h2>JavaScript Arrays</h2>
+
+    <p id="demo1"></p>
+
+    <p id="demo2"></p>
+
+
+    <p id="m1"></p>
+
+    <p id="m2"></p>
+
+    <p id="m3"></p>
+
+    <p id="m4"></p>
+
+    <p id="m5"></p>
+
+    <p id="m6"></p>
+
+    <script>
+
+        var fruits = ["Banana", "Apple", "Orange", "Pineapple"];
+
+        document.getElementById("demo1").innerHTML = fruits;
+
+        document.getElementById("demo2").innerHTML = fruits[3];
+
+        let length = fruits.length
+
+        document.getElementById("m1").innerHTML = "The length of the array is : " + length;
+
+        document.getElementById("m2").innerHTML = fruits.toString();
+
+        let fruit = fruits.at(2);
+
+        document.getElementById("m3").innerHTML = fruit;
+
+        document.getElementById("m4").innerHTML = fruits.join("*");
+
+        let pop = fruits.pop();
+
+        document.getElementById("m5").innerHTML = pop;
+
+        fruits.push("Kiwi");
+
+        document.getElementById("m6").innerHTML = fruits;
+
+    </script>
+
+</body>
+
+</html>
