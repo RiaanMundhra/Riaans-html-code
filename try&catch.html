@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="degywug"></p>
+    <script>
+        try{ 
+           var x = 10/0;
+           if(x === Infinity)
+           throw Error("Cannnot divde by zero")
+        }
+        catch(err){
+            document.getElementById("degywug").innerHTML = err.message;
+        }
+    </script>
+    
+</body>
+</html>
