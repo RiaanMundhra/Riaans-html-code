@@ -1,0 +1,5 @@
+print("Hello I'm Riaan!!")
+age = int(input("Enter your age: "))
+print("You are " + str(age) + " years old.")
+print("I type casted your age did you figure out??")
+print("Well I hope not as then you are going to see me extacting money from your account!! Muhahahaha")
