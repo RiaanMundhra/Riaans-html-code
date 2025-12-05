@@ -1,0 +1,10 @@
+num = int(input("Enter the number you want to see if it is prime: "))
+is_prime = True
+for i in range(2, int(num**0.5) + 1):
+    if num % i == 0:
+        is_prime = False
+        break
+if is_prime and num > 1:
+    print(f"{num} is a prime number.")
+else:
+    print(f"{num} is not a prime number.")  
