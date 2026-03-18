@@ -1,11 +1,16 @@
-emptylist = []
-print(emptylist)
+l  = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169, 196, 225, 256, 361, 400]
 
-number = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-print(number)
+def separate(nums):
+    odd = []
+    even = []
+    for n in nums:
+        if n % 2 == 0:
+            even.append(n)
+        else:
+            odd.append(n)
+    return odd, even
 
-triples = [1, 5, 10, 5, 1] * 3
-print(triples)
+odd_nums, even_nums = separate(l)
 
-revorder = [1, 2, 3, 4, 5]
-print(revorder [::-1])
+print("Odd squares are:", odd_nums)
+print("Even squares are:", even_nums)
